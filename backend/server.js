@@ -6,10 +6,10 @@ const dns = require("dns");
 
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
-connectDb()
 
 const PORT = process.env.PORT || 3200;
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+  connectDb()
 });
